@@ -1,9 +1,25 @@
 
-.div1 , p{
+h1{
 
+    background-color: blue;
+    color:blue;
+}
+
+
+.div1{
+    margin: 10px auto;
     width:100px;
     height: 100px;
     background-color:blue;
+    border:1px solid;
+    border-radius:3px;
+}
+
+#div2{
+    
+    width:100px;
+    height: 100px;
+    background-color:aqua;
     border:1px solid;
     border-radius:3px;
 }
