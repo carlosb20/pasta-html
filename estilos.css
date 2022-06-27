@@ -1,0 +1,26 @@
+
+
+
+
+
+
+#pos {
+
+    background-color: aqua;
+    width: 100%;
+    position:relative;
+    
+
+    
+}
+
+#ca ,img{
+    position:absolute;
+    width: 100px;;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    
+    
+
+}
