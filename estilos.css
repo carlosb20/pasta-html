@@ -1,26 +1,44 @@
 
-h1{
-
-    background-color: blue;
-    color:blue;
-}
-
-
-.div1{
-    margin: 10px auto;
-    width:100px;
-    height: 100px;
-    background-color:blue;
-    border:1px solid;
-    border-radius:3px;
-}
-
-#div2{
+#pos{
     
-    width:100px;
-    height: 100px;
-    background-color:aqua;
-    border:1px solid;
-    border-radius:3px;
+    background-color:blue;
+    width:100px auto;
+    height:500px;
+    
 }
 
+.galery{
+    
+    width:640px;
+    height:400px;
+    margin:auto;
+    
+    overflow: hidden;
+    
+}
+
+.galery .fotos {
+    width:500%;
+    animation-name:animaco;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+}
+
+.galery .fotos img {
+    
+    width:20%
+}
+
+@keyframes animaco {
+
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    95%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+    
+
+}
