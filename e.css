@@ -1,6 +1,6 @@
 *{
     padding: 10px;
-    margin:0;
+    margin: 10px;
 }
 
 
@@ -28,7 +28,8 @@
 
 .slider img{
     
-    width:60%;
+    height:250px;
+    width:80%;
     
 }
 
