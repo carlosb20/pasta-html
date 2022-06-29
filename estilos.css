@@ -1,9 +1,9 @@
 
 #pos{
+    position:relative;
     
-    background-color:blue;
-    width:100px auto;
-    height:500px;
+    width:100% auto;
+    
     
 }
 
@@ -17,7 +17,7 @@
     
 }
 
-.galery .fotos {
+.fotos {
     width:500%;
     animation-name:animaco;
     animation-duration: 12s;
@@ -26,7 +26,7 @@
 
 .galery .fotos img {
     
-    width:20%
+    width:19.9%
 }
 
 @keyframes animaco {
