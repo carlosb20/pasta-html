@@ -89,7 +89,7 @@
     gap:20px;
   }
   
-  .move{
+  .container .move{
       padding-left: 50px;
       background-color:red;
       display:block;
@@ -98,7 +98,7 @@
   
   }
   
-  @media(max-width:560px){
+  @media(max-width:500px){
     .container{
       display:block;
       grid-template-columns:repeat(2,1fr);
@@ -111,6 +111,7 @@
       border: 1px solid;
       max-width:200px;
       text-align: center;
+      
   
     }
   }
