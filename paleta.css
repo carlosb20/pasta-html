@@ -1,0 +1,60 @@
+
+/*  01 #68da3e
+    02 #00c6ab
+    03 #6aa3b4
+    04 #416864
+    05 #223026 */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+header{
+    
+    margin: 0px;
+    padding: 10px;
+    max-width: 100%;
+    height: 550px;
+    background-color: #223026;
+}
+
+header   h1  {
+    max-width: 300px;
+    height: 60px;
+    margin-left: 10px;
+    font: 10em sans-serif;
+    font-size:50px;
+    background-color:#00c6ab ;
+    color: white;
+}
+
+header  h2{
+    max-width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    font: 5em sans-serif;
+    font-size:40px;
+    background-color:#00c6ab ;
+    color: white;
+    
+
+}
+
+header > nav{
+    display:flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 360px;
+    justify-items: center;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+header nav  ul  li {
+    list-style: none;
+    text-decoration: none;
+}  
+
