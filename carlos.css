@@ -79,7 +79,7 @@
   }
   
   .container{
-    display:inline;
+    
     padding: 8px;
     min-width: 120px;
     display:flex;
@@ -89,30 +89,36 @@
     gap:20px;
   }
   
-  .container .move{
+  .move{
+    text-align: center;
       padding-left: 50px;
       background-color:red;
       display:block;
       width:100%;
       height:160px;
+      
   
   }
   
-  @media(max-width:500px){
+  @media(max-width:560px){
     .container{
-      display:block;
-      grid-template-columns:repeat(2,1fr);
-      grid-gap: 10px;
-      justify-content:center;
-    }
-  
-    .move{
-      margin:5px;
-      border: 1px solid;
-      max-width:200px;
-      text-align: center;
+      display:flex;
+      flex-direction: column-reverse;
+      align-items: center;
       
-  
+      
     }
+
+    .move{
+      
+      margin: 5px;
+      border: 1px solid rgb(39, 37, 37);
+      max-width:200px;
+      border-radius: 14px 0px 15px 0px ;
+      text-align: center;
+      box-shadow: 5px 0px 5px 0px rgba(58, 55, 55, 0.767);
+      
+    }
+    
   }
   
