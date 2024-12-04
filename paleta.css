@@ -20,9 +20,11 @@ h1  {
     height: 60px;
     margin-left: 10px;
     padding: 10px;
+    display: flex;
     font: 10em sans-serif;
     font-size:50px;
     color:yellowgreen;
+    text-shadow: 2px 2px red;
 }
 
 
@@ -33,12 +35,14 @@ h2{
     padding-top: 4px;
     font: 5em sans-serif;
     font-size:40px;
-    color:yellow;  
+    color:yellow;
+    text-shadow: 2px 2px red;  
 }
 
 .container{
     max-width:100%;
     display:inline-flex;
+
       
 }
 
@@ -50,16 +54,50 @@ h2{
     text-align: center;
     width: 900px;
     height: 450px;
+   
+    
 
 }
 
 .div1{
+    
+    width: 180px;
+    height: 100px;
+    background-color: #416864;
+    padding: 1px;
+    
+    
+}
 
+.div3{
+    
     width: 100px;
     height: 100px;
     background-color: #416864;
     padding: 1px;
     margin: 5px;
-
 }
 
+h1 > img{
+    
+    padding: 10px;
+    box-shadow: 0px 1px 0px 0px red;
+    animation-name: example ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes example{
+
+    from{margin-left: 30px;}
+    to{margin-left: 500px;}
+}
+
+
+@media(max-width:600px) {
+    
+    @keyframes example{
+        from{margin-left: 30px;}
+        to{margin-left: 200px;}
+    }
+}
