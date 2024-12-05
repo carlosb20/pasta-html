@@ -1,103 +1,48 @@
-
-/*  01 #68da3e
-    02 #00c6ab
-    03 #6aa3b4
-    04 #416864
-    05 #223026 */
 *{
-    padding: 0px;
     margin: 0px;
-
+    padding: 0px;
+    
 }
 
 body{
 
-    background-color:#223026;
+    background-color: black;
 }
 
-h1  {
-    max-width: 300px;
-    height: 60px;
-    margin-left: 10px;
-    padding: 10px;
-    display: flex;
-    font: 10em sans-serif;
-    font-size:50px;
-    color:yellowgreen;
-    text-shadow: 2px 2px red;
-}
-
-
-h2{
-    max-width: 150px;
-    height: 40px;
-    margin-left: 10px;
-    padding-top: 4px;
-    font: 5em sans-serif;
-    font-size:40px;
-    color:yellow;
-    text-shadow: 2px 2px red;  
-}
-
-.container{
-    max-width:100%;
-    display:inline-flex;
-
-      
-}
-
-.items{
-
-    background-color:#00c6ab ;
-    font-size: 10px;
-    border: 1px solid #416864 ;
-    text-align: center;
-    width: 900px;
-    height: 450px;
-   
+header{
+    display:inline;
+    max-width: 100%;
     
-
 }
 
-.div1{
+.div_cont{
+
+    display:flex;
+    margin: 0px auto;
+    max-width: 100%;
+    background-color: blueviolet;
     
-    width: 180px;
-    height: 100px;
-    background-color: #416864;
-    padding: 1px;
+}
+
+.div_cont ul {
+
+   display: inline-flex;
+    margin: 10px auto; 
+    list-style: none;
+    padding-right:40px;
+    
     
     
 }
 
-.div3{
-    
-    width: 100px;
-    height: 100px;
-    background-color: #416864;
-    padding: 1px;
-    margin: 5px;
+.div_cont > ul > li{
+    display: inline-flex;
+    margin-left: 70px;
+  
+     
 }
 
-h1 > img{
-    
-    padding: 10px;
-    box-shadow: 0px 1px 0px 0px red;
-    animation-name: example ;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes example{
+.div_cont > ul > li:hover{
 
-    from{margin-left: 30px;}
-    to{margin-left: 500px;}
-}
-
-
-@media(max-width:600px) {
-    
-    @keyframes example{
-        from{margin-left: 30px;}
-        to{margin-left: 200px;}
-    }
+    box-shadow:0px 1px 0px 0px red;
 }
