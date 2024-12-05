@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    display:i;
+    display:flex;
     max-width: 100%;
     
 }
