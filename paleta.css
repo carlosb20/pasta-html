@@ -61,3 +61,117 @@ header button:hover{
 header nav ul li:hover{
     box-shadow:0px 1px 0px red;
 }
+
+
+section div{
+
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    
+    
+}
+
+section{
+    max-width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+section .pos{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 50px auto;
+    border: 1px solid green;
+    justify-content: center;
+    
+}
+
+section div p{
+
+    color: white;
+    padding: 4px;
+    margin: 4px;
+    text-decoration:underline;
+    
+}
+
+.pos div ul li{
+    
+    color: white;
+    margin: 8px;
+    font-size:15px;
+    list-style: none;
+}
+
+.pos div ul{
+    
+    margin:0px;
+    font-size:5px;
+}
+
+section .val{
+    
+    width: 70%;
+    height: 300px;
+   
+      
+}
+
+section .val img{
+    width: 250px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    margin: 15px auto;
+    animation-name:move ;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+    
+}
+
+@keyframes move{
+
+    0% {transform: translate(0px,0px);}
+    20% {transform: translate(0px,8px);}
+
+}
+
+
+@media(max-width:800px){
+    section .pos{
+        display: flex;
+        width: 50%;
+        height: 10em;
+        margin: 50px auto;
+    }
+    section .val{
+        
+        width: 50%;
+        height: 9em;
+        margin: 5px;
+        
+    }
+    section .val img{
+        width: 50PX;
+        height: 5em;
+        border-radius: 50%;
+        align-items: center;
+        margin: 15px auto;
+       
+        
+         
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
