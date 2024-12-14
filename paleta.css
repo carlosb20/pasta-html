@@ -162,6 +162,11 @@ aside{
     padding: 5px;
 }
 
+
+
+
+
+
 @keyframes move{
 
     0% {transform: translate(0px,0px);}
