@@ -162,22 +162,33 @@ aside{
     padding: 5px;
 }
 
-.cont{
-   
-    width: 100%;
-    height: 30vw;
-    background-color: aquamarine;
-    display:flex;
+.cent{
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
     
-    align-items: center;
 }
 
-.cont .item{
+.cont{
+   
+    width: 600px;
+    height: 800px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.item{
 
     width: 200px;
     height: 200px;
+    margin: 5px;
     background-color: orange;
     border: 1px solid blueviolet;
+    border-radius:5% ;
+   
 }
 
 
