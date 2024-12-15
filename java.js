@@ -1,23 +1,22 @@
 
-var myIndex = 0;
-carousel();
 
 
-function carousel(){
-    var i;
-    var x;
-    document.getElementsByClassName("myslides");
-    for(i = 0; i < x.length; i++){
-        x[1].style.display = "none";
-    }
-    myIndex++;
-    if(myIndex > x.length){
-        myIndex = 1
-    }
+function func(){
+    document.getElementById("main").innerHTML = "<img src='porfoli/youtube_.png' width=80px>foto</img>"
 
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel,2000);
+    num.map((e)=>{
+        e.classList.add("des")
+        console.log(e)
+    })
+
+    document.getElementById("div2").innerHTML = "<img src='porfoli/youtube_.png' width=80px>foto</img>"
+    
 }
+
+const num = [...document.getElementsByClassName("item")]
+
+
+
 
 
 

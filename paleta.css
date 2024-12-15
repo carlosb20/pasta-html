@@ -131,12 +131,6 @@ section .val img{
     
 }
 
-#ap{
-
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
 
 aside{
     display:flex;
@@ -170,6 +164,13 @@ aside{
     
 }
 
+.main{
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
 .cont{
    
     width: 600px;
@@ -191,7 +192,10 @@ aside{
    
 }
 
+.des{
 
+    border:3px solid rgb(202, 202, 205) !important;
+}
 
 
 @keyframes move{
