@@ -13,7 +13,7 @@ function func(){
     
 }
 
-const num = [...document.getElementsByClassName("item")]
+
 
 
 var myIdex = 0;
