@@ -4,16 +4,28 @@
 function func(){
     document.getElementById("main").innerHTML = "<img src='porfoli/youtube_.png' width=80px>foto</img>"
 
-    num.map((e)=>{
-        e.classList.add("des")
-        console.log(e)
-    })
 
     document.getElementById("div2").innerHTML = "<img src='porfoli/youtube_.png' width=80px>foto</img>"
     
+    document.getElementById("div_4").style.backgroundColor = "green"
 }
 
 
+
+var getCores = ['blue','orange','green','silver','black']
+mudaCor()
+function mudaCor(){
+
+    for (i = 0; i < getCores.length; i++){
+        
+        const val = document.getElementById("div_4")
+        val.style.backgroundColor = getCores[i]
+        console.log(getCores[i])
+    }
+
+
+    setTimeout(mudaCor,5000);
+}
 
 
 var myIdex = 0;
@@ -26,7 +38,7 @@ function carousel(){
     
     for (i = 0; i < x.length; i++){
         x[i].style.display = "none";
-        
+       
     } 
     myIdex ++;
     if (myIdex > x.length){
