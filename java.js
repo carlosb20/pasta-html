@@ -12,20 +12,29 @@ function func(){
 
 
 
-var getCores = ['blue','orange','green','silver','black']
+
 mudaCor()
 function mudaCor(){
 
-    for (i = 0; i < getCores.length; i++){
+    let muda_cor = document.getElementById("div_4");
+    console.log(muda_cor)
+
+    if (muda_cor.style.background == "blue"){
         
-        const val = document.getElementById("div_4")
-        val.style.backgroundColor = getCores[i]
-        console.log(getCores[i])
+        muda_cor.style.transition = "backgroundColor 4s";
+        muda_cor.style.backgroundColor = "red"
+
+    }else{
+
+        muda_cor.style.backgroundColor = "blue";
+        muda_cor.style.transition = "backgroundColor 4s"
+
+      
     }
 
-
-    setTimeout(mudaCor,5000);
+    setTimeout(mudaCor,3000);
 }
+
 
 
 var myIdex = 0;
