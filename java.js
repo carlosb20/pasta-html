@@ -16,23 +16,11 @@ function func(){
 mudaCor()
 function mudaCor(){
 
-    let muda_cor = document.getElementById("div_4");
-    console.log(muda_cor)
+    const val = document.getElementsByTagName("div_4")
+    console.log(val)
 
-    if (muda_cor.style.background == "blue"){
-        
-        muda_cor.style.transition = "backgroundColor 4s";
-        muda_cor.style.backgroundColor = "red"
 
-    }else{
-
-        muda_cor.style.backgroundColor = "blue";
-        muda_cor.style.transition = "backgroundColor 4s"
-
-      
-    }
-
-    setTimeout(mudaCor,3000);
+    
 }
 
 
