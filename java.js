@@ -10,21 +10,6 @@ function func(){
     document.getElementById("div_4").style.backgroundColor = "green"
 }
 
-
-
-
-mudaCor()
-function mudaCor(){
-
-    const val = document.getElementsByTagName("div_4")
-    console.log(val)
-
-
-    
-}
-
-
-
 var myIdex = 0;
 carousel();
 
@@ -45,6 +30,8 @@ function carousel(){
     x[myIdex-1].style.display = "block";
     setTimeout(carousel,6000);
 }
+
+
 
 
 
