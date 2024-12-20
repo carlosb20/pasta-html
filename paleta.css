@@ -158,7 +158,7 @@ aside{
 
 .cent{
     max-width: 100%;
-    height: 800px;
+    height: 100%;
     display: flex;
     justify-content: center;
     
@@ -174,12 +174,13 @@ aside{
 .cont{
    
     width: 600px;
-    height: 800px;
+    height: 100%;
     display:flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
+
 
 .item{
 
@@ -192,7 +193,30 @@ aside{
    
 }
 
+.bt{
 
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.bt button{
+
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(195, 10, 10) ;
+    border-radius: 10px;
+}
+
+.bt button:hover{
+
+    transform:scaleX(1.1);
+    transform: scaleY(1.1);
+    background-color: aquamarine;
+    color: blue;
+    font-size: 15px;
+}
 
 .des{
 
@@ -219,10 +243,8 @@ footer ul li{
 }
 
 footer ul li a img:hover{
-    width: 30px;
-    box-shadow: 0px 2px 0px 0px red;
-    margin: 10px;
-    padding: 5px;
+   
+    transform: scale(1.2);
     
 }
 
