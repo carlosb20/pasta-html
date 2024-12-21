@@ -3,48 +3,45 @@
     margin: 10px;
 }
 
+body{
 
-.slider{
-    background-color:black;
-    width:95%;
-    margin:auto;
-    overflow:hidden;
-    
+    background-color: rgb(50, 41, 41);
 }
 
-.slider ul{
-    
-    display:flex;
-    padding:0;
-    width:400%;
-    animation: cambio 12s infinite;
+.bt{
+
+    width: 100%;
+    text-align: center;
+
 }
 
-.slider li{
-   
-    width:100%;
-    list-style:none;
+.bt button{
+
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
 }
 
-.slider img{
-    
-    height:250px;
-    width:80%;
-    
-}
+.bt button:hover {
 
-@keyframes cambio {
-
-    0%{margin-left:0%;}
-    20%{margin-left:0%;}
-    25%{margin-left:-100%;}
-    45%{margin-left:-100%;}
-    50%{margin-left:-200%;}
-    70%{margin-left:-200%;}
-    95%{margin-left:-300%;}
-    100%{margin-left:-300%;}
-    
+    background-color: aquamarine;
+    transform: scaleX(1.1);
 }
 
 
+.myStyle{
 
+    background-color: coral;
+    padding: 10px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(131, 121, 142);
+}
+
+.myStyle:hover{
+
+    transform:skewY(20deg);
+}
