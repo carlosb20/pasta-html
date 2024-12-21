@@ -131,6 +131,10 @@ section .val img{
     
 }
 
+section .foco:hover{
+
+    transform: skewX(-20deg);
+}
 
 aside{
     display:flex;
@@ -138,6 +142,13 @@ aside{
     justify-content: center;
     
     
+}
+
+#div2{
+
+    
+    align-content: center;
+    text-align: center;
 }
 
 .grid-item{
