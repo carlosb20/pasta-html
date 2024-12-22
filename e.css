@@ -10,7 +10,7 @@ body{
 
 .bt{
 
-    width: 100%;
+    width: 30px;
     text-align: center;
 
 }
@@ -25,7 +25,7 @@ body{
 
 .bt button:hover {
 
-    background-color: aquamarine;
+    background-color: rgb(11, 232, 158);
     transform: scaleX(1.1);
 }
 
@@ -44,4 +44,10 @@ body{
 .myStyle:hover{
 
     transform:skewY(20deg);
+   
+}
+
+.item1{
+
+    width: 300px;
 }
