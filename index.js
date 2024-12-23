@@ -35,14 +35,54 @@ async function getPosta(){
 
 getPosta()
 
-const fil = 'https://www.themoviedb.org/';
 
-async function filmes(){
+const btn = document.createElement("button");
+btn.style.backgroundColor = 'orange'
+btn.style.border = '1px solid white'
+btn.style.borderRadius = '10px'
+btn.style.color = 'blue'
+btn.innerHTML = 'click mim !';
+
+btn.addEventListener('mouseenter',()=>{
+
+    btn.style.transform = 'scale(1.1)'
+    btn.style.cursor = 'pointer'
+})
+
+btn.addEventListener('mouseleave',()=>{
+
+   
+    btn.style.transform = 'scale(1.0)'
     
-    const filme = await fetch(fil);
-    const ver = await filme.json()
+})
 
-    console.log(ver)
-}
+const div_item = document.querySelector(".item2")
 
-filmes()
+div_item.appendChild(btn)
+
+console.log(div_item.className)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
