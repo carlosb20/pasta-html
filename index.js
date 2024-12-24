@@ -8,7 +8,7 @@ function num(){
     const ca = document.querySelector(".item1")
     ca.innerHTML = 'carlos'
     
-    console.log(val)
+    
 }
 
 
@@ -60,7 +60,9 @@ const div_item = document.querySelector(".item2")
 
 div_item.appendChild(btn)
 
-console.log(div_item.className)
+
+
+
 
 
 
