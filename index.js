@@ -102,7 +102,6 @@ valor.map((el) => {
 
 })
 
-// cb9799f1bfc9e4663813cd632bccb561
 
 const tem = "http://apiadvisor.climatempo.com.br/api/v1/locale/city?name=parauapebas&state=PA&token=cb9799f1bfc9e4663813cd632bccb561"
 
