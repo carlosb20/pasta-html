@@ -63,3 +63,9 @@ body{
     color: rgb(199, 139, 139);
     text-shadow: -1px 1px white;
 }
+
+
+.pesquisa{
+
+    display: flex;
+}
