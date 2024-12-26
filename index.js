@@ -102,19 +102,32 @@ valor.map((el) => {
 
 })
 
-// cb9799f1bfc9e4663813cd632bccb561
 
-const tem = "http://apiadvisor.climatempo.com.br/api/v1/locale/city?name=parauapebas&state=PA&token=cb9799f1bfc9e4663813cd632bccb561"
+
+const key = 'd47b61bde3350c283c19a90cf0e4367e'
+const city = 'parauapebas'
+
+
+
+const urltem = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt-br`
 
 
 async function tempo(){
 
-    const re = await fetch(tem);
-    const Tempo = await re.json();
-    console.log(Tempo)
+    const re = await fetch(urltem);
+    const tem = await re.json();
+    console.log(tem)
 }
 
 tempo()
+
+document.querySelector("#search").addEventListener('submit',(evel)=>{
+    evel.preventDefault();
+
+    const nome = document.querySelector("#nome").value;
+    
+
+})
 
 
 

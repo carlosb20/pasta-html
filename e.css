@@ -65,7 +65,62 @@ body{
 }
 
 
-.pesquisa{
+.conteiner{
 
-    display: flex;
+    width: 100%;
+    justify-items: center;
+   
+    
 }
+
+.conte{
+
+    width: 400px;
+    border-radius: 10px;
+    background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
+}
+
+.cont2{
+
+    border-radius: 10px;
+    background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
+   
+}
+
+.tempo{
+
+    border-radius: 10px;
+    background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr, 0.1fr;
+        
+}
+
+.deco{
+    width: 125px;
+    height: 60px;
+   
+    background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
