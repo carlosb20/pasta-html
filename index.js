@@ -116,7 +116,7 @@ async function tempo(){
 
     const re = await fetch(urltem);
     const tem = await re.json();
-    console.log(tem)
+    
 }
 
 tempo()
@@ -125,8 +125,10 @@ document.querySelector("#search").addEventListener('submit',(evel)=>{
     evel.preventDefault();
 
     const nome = document.querySelector("#nome").value;
-    
 
+    console.log(nome)
+
+    document.querySelector("#nome").value ="";
 })
 
 

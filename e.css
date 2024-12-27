@@ -104,11 +104,26 @@ body{
     background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
 }
 
+#nome{
 
+    width: 260px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+}
 
+#search button{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+}
 
+#search{
 
+    display: flex;
 
+}
 
 
 
