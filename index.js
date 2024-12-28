@@ -66,9 +66,6 @@ div_item.appendChild(btn)
 
 const valor = [...document.getElementsByClassName("item3")]
 
-
-
-
 valor.map((el) => {
 
     const p = document.createElement('p')
@@ -102,33 +99,69 @@ valor.map((el) => {
 
 })
 
-
+//--------------------------------------------------------------------------------------------------------
 
 const key = 'd47b61bde3350c283c19a90cf0e4367e'
-const city = 'parauapebas'
 
 
+async function tempo(city){
 
-const urltem = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt-br`
-
-
-async function tempo(){
+    const urltem = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br`
 
     const re = await fetch(urltem);
     const tem = await re.json();
-    
-}
 
-tempo()
+    if(tem.cod == 200){
+
+        console.log(tem)
+        console.log(tem.weather[0]['description'])
+
+        const foto = tem.weather[0]['icon']
+
+        const imagem =  document.querySelector('#getimg')
+        
+
+        const setimg = document.createElement('img')
+        setimg.src = `https://openweathermap.org/img/wn/${foto}@2x.png`
+        const setp = document.createElement('p')
+
+        setp.innerHTML = tem.weather[0]['description']
+        
+        setimg.style.position = 'relative'
+        setimg.style.left = '200px'
+        setimg.style.bottom = '28px'
+        setimg.style.width = '100px'
+
+        setp.style.position = 'relative'
+        setp.style.left = '100px'
+        setp.style.bottom = '2px'
+
+        
+        imagem.appendChild(setimg)
+        imagem.appendChild(setp)
+
+    }else{
+
+        alert('Por favor verifica o nome digita')
+    }
+     
+}
 
 document.querySelector("#search").addEventListener('submit',(evel)=>{
     evel.preventDefault();
 
-    const nome = document.querySelector("#nome").value;
+    const city = document.querySelector("#nome").value;
 
-    console.log(nome)
+    if(!(city == '')){
 
-    document.querySelector("#nome").value ="";
+        tempo(city)
+        document.querySelector("#nome").value ="";  
+
+    }else{
+
+        alert('enforme um cidade ')
+    }   
+    
 })
 
 
