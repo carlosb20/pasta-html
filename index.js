@@ -113,7 +113,7 @@ async function tempo(city){
 
     if(tem.cod == 200){
 
-        console.log(tem)
+        
         console.log(tem.weather[0]['description'])
 
         const foto = tem.weather[0]['icon']
@@ -123,22 +123,50 @@ async function tempo(city){
 
         const setimg = document.createElement('img')
         setimg.src = `https://openweathermap.org/img/wn/${foto}@2x.png`
+        
         const setp = document.createElement('p')
 
-        setp.innerHTML = tem.weather[0]['description']
+        const setname = document.createElement('p')
+
         
+        
+        setimg.style.margin =  '0'
+        setimg.style.padding = '0'
         setimg.style.position = 'relative'
-        setimg.style.left = '200px'
-        setimg.style.bottom = '28px'
-        setimg.style.width = '100px'
+        setimg.style.left = '59px'
+        setimg.style.bottom = '9px'
 
+        setname.style.color = 'white'
+        setname.style.textShadow = '2px 2px 2px black'
+        
+
+        setp.style.margin = '0px'
         setp.style.position = 'relative'
-        setp.style.left = '100px'
-        setp.style.bottom = '2px'
+        setp.style.left = '168px'
+        setp.style.padding = '0px'
+        setp.style.textAlign = 'center'
+        setp.style.color = 'white'
+        setp.style.textShadow = '2px 2px 2px black'
 
+        setp.innerHTML = 'Tempo : ' + tem.weather[0]['description']
+        setname.innerHTML = 'Cidade : ' +  tem.name
+
+        const conte = document.querySelector('#cont2')
+
+        conte.style.display = 'block'
+
+        console.log(tem.name)
+
+        
+        
+        imagem.appendChild(setname)
         
         imagem.appendChild(setimg)
         imagem.appendChild(setp)
+        
+       
+        
+        
 
     }else{
 
