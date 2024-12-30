@@ -68,10 +68,8 @@ body{
 .conteiner{
 
     width: 100%;
-
-    background-color: #B0E0E6;
-   
-    
+    justify-items: center;
+       
 }
 
 .conte{
@@ -94,16 +92,25 @@ body{
     border-radius: 10px;
     background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr, 0.1fr;
+    grid-template-columns: 152px 149px;
+    grid-template-rows: 88px;
         
 }
 
 .deco{
+
     width: 125px;
     height: 60px;
-   
+    align-content: center;
     background:linear-gradient(100deg,#87da876a,#525eb66e,#B0E0E6);
+}
+
+.deco h3{
+
+    margin: 0;
+    padding: 0;
+    color: rgb(11 232 224);
+    font-size: 24px;
 }
 
 #nome{

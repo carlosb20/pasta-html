@@ -113,9 +113,6 @@ async function tempo(city){
 
     if(tem.cod == 200){
 
-        
-        console.log(tem.weather[0]['description'])
-
         const foto = tem.weather[0]['icon']
 
         const imagem =  document.querySelector('#getimg')
@@ -128,7 +125,13 @@ async function tempo(city){
 
         const setname = document.createElement('p')
 
-        
+        const setH3 = document.querySelector('#H3')
+
+        const tempo_min = document.querySelector('#tempo-min')
+
+        const Humi = document.querySelector('#humi')
+
+        console.log(tem)
         
         setimg.style.margin =  '0'
         setimg.style.padding = '0'
@@ -151,11 +154,16 @@ async function tempo(city){
         setp.innerHTML = 'Tempo : ' + tem.weather[0]['description']
         setname.innerHTML = 'Cidade : ' +  tem.name
 
+        setH3.innerHTML = ' Tempo-max ' + Math.floor(tem.main.temp) + ' °C'
+        tempo_min.innerHTML = ' Tempo-min ' + Math.floor(tem.main.temp_min) + ' °C'
+        Humi.innerHTML = 'Umidade do tempo ' + tem.main.humidity 
+
+
         const conte = document.querySelector('#cont2')
 
         conte.style.display = 'block'
 
-        console.log(tem.name)
+        console.log(tem.main.temp)
 
         
         
