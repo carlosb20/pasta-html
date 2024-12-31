@@ -117,7 +117,6 @@ async function tempo(city){
 
         const imagem =  document.querySelector('#getimg')
         
-
         const setimg = document.createElement('img')
         setimg.src = `https://openweathermap.org/img/wn/${foto}@2x.png`
         
@@ -131,7 +130,7 @@ async function tempo(city){
 
         const Humi = document.querySelector('#humi')
 
-        console.log(tem)
+    
         
         setimg.style.margin =  '0'
         setimg.style.padding = '0'
@@ -151,6 +150,8 @@ async function tempo(city){
         setp.style.color = 'white'
         setp.style.textShadow = '2px 2px 2px black'
 
+       
+
         setp.innerHTML = 'Tempo : ' + tem.weather[0]['description']
         setname.innerHTML = 'Cidade : ' +  tem.name
 
@@ -158,23 +159,26 @@ async function tempo(city){
         tempo_min.innerHTML = ' Tempo-min ' + Math.floor(tem.main.temp_min) + ' °C'
         Humi.innerHTML = 'Umidade do tempo ' + tem.main.humidity 
 
-
+        
         const conte = document.querySelector('#cont2')
 
         conte.style.display = 'block'
 
-        console.log(tem.main.temp)
+        
+        let pass = 0;
 
-        
-        
-        imagem.appendChild(setname)
-        
-        imagem.appendChild(setimg)
-        imagem.appendChild(setp)
-        
-       
-        
-        
+        if(pass == 0){
+            pass = 1
+            imagem.appendChild(setname)
+            imagem.appendChild(setimg)
+            imagem.appendChild(setp)
+        }else{
+
+            const da = document.querySelector("#getimg")
+            da.remove()
+            pass = 0
+        }
+           
 
     }else{
 
