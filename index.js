@@ -105,13 +105,18 @@ const key = 'd47b61bde3350c283c19a90cf0e4367e'
 
 
 async function tempo(city){
+    pass = 0;
 
+   
     const urltem = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br`
 
     const re = await fetch(urltem);
     const tem = await re.json();
+    
+    
 
     if(tem.cod == 200){
+
 
         const foto = tem.weather[0]['icon']
 
@@ -165,19 +170,11 @@ async function tempo(city){
         conte.style.display = 'block'
 
         
-        let pass = 0;
-
-        if(pass == 0){
-            pass = 1
+       
             imagem.appendChild(setname)
             imagem.appendChild(setimg)
             imagem.appendChild(setp)
-        }else{
-
-            const da = document.querySelector("#getimg")
-            da.remove()
-            pass = 0
-        }
+        
            
 
     }else{
